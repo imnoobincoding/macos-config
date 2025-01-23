@@ -1,45 +1,117 @@
-#                                                             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠉⠉⠁⠀⠀⠀⠀⠈⠉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠁⠀⠀⠀⠀⠈⠉⠉⠛⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿   #
-#    File:         skhdrc                                     ⣿⣿⣿⣿⣿⡿⠟⢋⣁⣠⣴⣶⣶⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣶⣶⣦⣤⣈⡙⠻⢿⣿⣿⣿⣿⣿   #
-#                                                             ⣿⣿⣿⣿⣧⣴⣾⣿⣿⡿⠿⠛⠉⠩⠭⠭⢍⣉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⣉⡩⠭⠭⠍⠉⠛⠿⢿⣿⣿⣷⣦⣽⣿⣿⣿⣿   #
-#    Project:      macOS-config                               ⣿⣿⣿⣿⣿⣿⣿⠟⡩⠔⠈⠀⠀⠀⠀⠀⠀⠉⠛⢦⡙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⡴⠛⠁⠀⠀⠀⠀⠀⠀⠁⠢⢍⠻⣿⣿⣿⣿⣿⣿⣿   #
-#    Github:       marsdevx                                   ⣿⣿⣿⠻⠿⠟⡀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣄⡀⠀⠀⠙⠌⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠠⠋⠀⠀⢀⣠⣄⡀⠀⠀⠀⠀⠀⠀⠀⢄⠻⠿⠛⣿⣿⣿   #
-#                                                             ⣿⣿⣿⣷⣠⠀⠀⠀⢀⡄⠀⠀⠀⣼⣿⣿⣿⣿⣦⠀⠀⠀⣬⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣥⠀⠀⠀⣴⣿⣿⣿⣿⣧⠀⠀⠀⢠⡀⠀⠀⠠⣄⣾⣿⣿⣿   #
-#    Created:      09:25   10/01/2025                         ⣛⠛⠉⠉⠀⠀⠀⢠⣿⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⡄⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⢰⣿⣿⣿⣿⣿⣿⠆⠀⠀⠈⣷⡄⠀⠀⠀⠉⠙⠛⣛   #
-#    Updated:      09:25   10/01/2025                         ⣿⣿⣿⣿⣿⡄⠠⣿⣿⠀⠀⠀⠀⢿⣿⣿⣿⣿⡿⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⢿⣿⣿⣿⣿⡿⠀⠀⠀⠀⣿⣿⠀⢠⣿⣿⣿⣿⣿   #
-#                                                             ⣿⣿⣿⣿⣿⣿⣄⠹⣿⡆⠀⣠⡀⠀⠙⠛⠛⠋⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⢀⡈⠛⠛⠛⠋⠀⠀⠀⠀⢸⣿⠏⣠⣿⣿⣿⣿⣿⣿   #
-#    Path:         ./skhd/skhdrc                              ⣿⣿⣿⣿⣿⣿⣿⣦⣽⣿⣦⡿⠿⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⣾⣿⠄⠀⠀⠀⠀⠀⠀⣰⣿⣧⣼⣿⣿⣿⣿⣿⣿⣿   #
-#                                                             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢷⣄⣀⠀⠀⠀⢀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣄⡀⠀⠀⠀⣀⣤⡾⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿   #
-#                                                             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣥⣤⠉⠙⠛⠛⠛⢛⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⡛⠛⠛⠛⠉⠁⣤⣬⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿   #
+#==============================#
+#       skhdrc Configuration    #
+#==============================#
 
-# Commands to open apps
-f1 : open -n -a "iTerm"
-f2 : open -n -a "Google Chrome"
-f3 : open -n -a "ChatGPT"
-f4 : open -n -a "YouTube"
-f5 : open -n -a "Telegram"
+# Metadata
+# File:         skhdrc
+# Project:      macOS-config
+# Github:       marsdevx
+# Path:         ./skhd/skhdrc
+# Created:      09:25   10/01/2025
+# Updated:      09:25   10/01/2025
 
-# Move window to previous and next space
+#==============================#
+#        Helper Functions       #
+#==============================#
+
+# Function to safely open applications
+# Usage: open_app <app_name>
+open_app() {
+    local app="$1"
+    if open -Ra "$app"; then
+        open -n -a "$app" && osascript -e 'display notification "Opened '"$app"'" with title "skhdrc"'
+    else
+        osascript -e 'display notification "Application '"$app"' not found." with title "skhdrc"'
+    fi
+}
+
+# Function to close specific applications
+# Usage: close_app <app_name_pattern>
+close_app() {
+    local pattern="$1"
+    yabai -m window --query | jq -r '.[] | select(.app | test("'"$pattern"'")) | .id' | while read -r window_id; do
+        yabai -m window --close "$window_id"
+    done && osascript -e 'display notification "Closed apps matching '"$pattern"'." with title "skhdrc"'
+}
+
+#==============================#
+#          Key Bindings         #
+#==============================#
+
+# Open Applications
+f1 : open_app "iTerm"
+f2 : open_app "Google Chrome"
+f3 : open_app "ChatGPT"
+f4 : open_app "YouTube"
+f5 : open_app "Telegram"
+
+#==============================#
+#      Window Management        #
+#==============================#
+
+# Move window to previous space
 shift + alt - p : yabai -m window --space prev
+
+# Move window to next space
 shift + alt - n : yabai -m window --space next
 
-# Move window to specific space
+# Move window to specific space (1-5)
 shift + alt - 1 : yabai -m window --space 1
 shift + alt - 2 : yabai -m window --space 2
 shift + alt - 3 : yabai -m window --space 3
 shift + alt - 4 : yabai -m window --space 4
 shift + alt - 5 : yabai -m window --space 5
 
-# Loop app
-# - Window Center: Fn + Enter
-# - Window Maximize: Fn + Space
-# - Window move and resize: Fn + arrows
+#==============================#
+#       Window Control Keys     #
+#==============================#
 
-# External Settings
-# - See All Spaces: Ctrl + top arrow
-# - Next Space: Ctrl + right arrow
-# - Previous Space: Ctrl + left arrow
-# - Go to different workspace: Ctrl + 1/2/3/4/5
-# - Raycast: Cmd + Space
-# - Duplicate window: Cmd + N
-# - Close app: Cmd + W (Cmd + Q for Terminal and Telegram)
-# - Settings: Cmd + (,)
+# Center Window: Fn + Enter
+fn + enter : yabai -m window --toggle center
+
+# Maximize Window: Fn + Space
+fn + space : yabai -m window --toggle zoom-fullscreen
+
+# Move and Resize Window: Fn + Arrow Keys
+fn + left_arrow  : yabai -m window --resize left:-20:0
+fn + right_arrow : yabai -m window --resize right:20:0
+fn + up_arrow    : yabai -m window --resize top:0:-20
+fn + down_arrow  : yabai -m window --resize bottom:0:20
+
+#==============================#
+#        External Settings      #
+#==============================#
+
+# See All Spaces: Ctrl + Up Arrow
+ctrl + up_arrow : yabai -m space --focus prev
+
+# Navigate to Next Space: Ctrl + Right Arrow
+ctrl + right_arrow : yabai -m space --focus next
+
+# Navigate to Previous Space: Ctrl + Left Arrow
+ctrl + left_arrow : yabai -m space --focus prev
+
+# Launch Raycast: Cmd + Space
+cmd + space : open_app "Raycast"
+
+# Duplicate Window: Cmd + N
+cmd + n : yabai -m window --duplicate && osascript -e 'display notification "Duplicated current window." with title "skhdrc"'
+
+# Close Application: Cmd + W (Cmd + Q for Terminal and Telegram)
+cmd + w : yabai -m window --close && osascript -e 'display notification "Closed current window." with title "skhdrc"'
+cmd + q : close_app "Terminal|Telegram"
+
+# Open Settings: Cmd + ,
+cmd + , : open_app "System Preferences"
+
+#==============================#
+#       Additional Comments     #
+#==============================#
+
+# Notes:
+# - Ensure all applications mentioned are installed on your system.
+# - Adjust resize values as per your preference.
+# - Modify key bindings if they conflict with existing shortcuts.
+# - Use 'yabai' command-line tool for window management.
+# - Requires 'jq' for JSON parsing in close_app function.
+# - Ensure Accessibility permissions are granted for yabai and skhd.

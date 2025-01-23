@@ -3,7 +3,7 @@
 </div>
 <br>
 <div align="center">
-  <img src="https://img.shields.io/github/last-commit/marsdevx/macOS-config?logo=github&logoColor=f5f5f5&label=Last%20Commit&color=8A2BE2&labelColor=2C2C2C" alt="Last Commit">
+  <img src="https://img.shields.io/github/last-commit/imnoobincoding/macOS-config?logo=github&logoColor=f5f5f5&label=Last%20Commit&color=8A2BE2&labelColor=2C2C2C" alt="Last Commit">
   <img src="https://img.shields.io/badge/Languages-Bash%20%7C%20Lua-B12B2A?logo=coder&logoColor=f5f5f5&labelColor=2C2C2C" alt="Languages">
   <img src="https://img.shields.io/badge/Platform-MacBook-748ADB?logo=apple&logoColor=f5f5f5&labelColor=2C2C2C" alt="Supported Platforms">
   <img src="https://img.shields.io/badge/Includes-Wallpapers-orange?logo=paperswithcode&logoColor=f5f5f5&labelColor=2C2C2C" alt="Wallpapers">
@@ -40,7 +40,7 @@ To install this project, Launch the Terminal app on your system, and run the com
 
 1. **Clone repo**
 ```zsh
-git clone https://github.com/marsdevx/macOS-config.git ~/Downloads/macOS-config
+git clone https://github.com/imnoobincoding/macOS-config.git ~/Downloads/macOS-config
 ```
 
 2. **Install Homebrew**
